@@ -1,30 +1,156 @@
-body {height:992px ;
-margin: auto;
-}
+@font-face 
+	{
+	font-family: Raleway;
+	src:url(Raleway-Italic-VariableFont_wght.ttf) format("truetype");
+	src:url(Raleway-VariableFont_wght.ttf) format("truetype");
+	 } 
+ 
+body 
+	{
+	font-family: Raleway, "Trebuchet Ms", Arial, sans-serif;
+	font-style: normal;
+	color:black;
+	height:992px;		
+	margin: auto;
+	background-color: white;
+ 	}
+
+header 
+	{
+	display: flex;
+	justify-content:space-between;
+	}
+
+	header img 
+		{
+		width: 5%;
+		height:5%;
+		}	 
+
+	nav>ul 
+		{
+		display: flex;
+	 	}
+	
+	nav>ul>li 
+		{
+		margin-right: 25px;
+		font-size: small;
+		}
+
+	/*retirer puces, retirer surlignage lien, retirer décoration lien qd déjà visité) */ 
+ 	ul 
+		{
+		list-style: none;
+		}
+
+	a 	{
+		text-decoration: none ;
+		color: black;
+		}
+
+h1 
+	{
+	font-weight: bold;
+	font-size: large;
+ 	}
+	
+h2 
+	{
+	font-weight: bold;
+	font-size:small;
+ 	}
+
+p 
+	{
+	font-size: small;
+	}
 
 
-header {display: flex;
-	justify-content:space-between ;
- }
+.info 
+	{
+	font-weight: normal;
+	font-size: small;
+	text-align: left;
+	}
 
- nav>ul{display: flex;
- }
+	/* ajouter: changement apparence au survol :
+	.filtres a:hover {font-style: italic ; color: #0065FC; background-color: #F2F2F2}*/
 
- nav>ul>li{margin-right: 10px ;}
 
-.conteneurbandeau {
-	height: 191px;
-	width: 810px;
-    background-color: pink ;
-}
+.hebergements,.les-plus-populaires, .info-site 
+	{
+	background-color: #F2F2F2; 
+	} 
 
-h1 {
-	color:black
-}
+*article
+	{
+	background-color: white;
+	}
 
-/*retirer puces, retirer décoration lien (qd déjà visité) */ 
-ul {list-style: none;
-}
-a {text-decoration: none ;
-	color: black;
-}
+#conteneur-hebergements-et-lespluspopulaires
+	{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	gap :5px;
+	}	
+
+#conteneur-hebergements-et-lespluspopulaires article 
+	{
+	border: 1px white solid;
+	border-radius: 10px;
+	}
+
+#conteneur-activites>article
+	{
+	border: 1px #F2F2F2 solid;
+	border-radius: 10px;
+	}
+
+.hebergements 
+	{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 4px;
+	flex-wrap: wrap;
+	}
+
+.les-plus-populaires 
+	{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+	}
+
+#conteneur-activites
+	{
+	display :flex;
+	flex-direction: column;
+	justify-content: center;
+	gap:4 px;
+	flex-wrap: wrap;
+	}
+
+
+
+.info-site {
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	}
+
+.titrefooter 
+	{
+	font-weight: normal;
+	font-size: small;
+	text-align: left;
+ 	}
+
+.titrefooter 
+	{ /* footer .[title*="footer"]*/
+	padding-left: 20px;
+	padding-right: 120px;
+	}
