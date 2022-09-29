@@ -1,42 +1,42 @@
-@font-face 
-	{
-	font-family: Raleway;
-	src:url(Raleway-Italic-VariableFont_wght.ttf) format("truetype");
-	src:url(Raleway-VariableFont_wght.ttf) format("truetype");
-	 } 
- 
 body 
 	{
-	font-family: Raleway, "Trebuchet Ms", Arial, sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	color:black;
-	height:992px;		
+	width: 992px;		
 	margin: auto;
 	background-color: white;
  	}
 
-header 
+header.conteneur-introduction, #conteneur-hebergements-populaires, #conteneur-activites
 	{
-	display: flex;
-	justify-content:space-between;
+	margin-left: 5%;
+	margin: 5%;
 	}
 
-	header img 
-		{
-		width: 5%;
-		height:5%;
-		}	 
+/*BARRE DE NAVIGATION*/
+header {
+	display: flex;
+	justify-content:space-between;
+}
 
-	nav>ul 
-		{
-		display: flex;
-	 	}
+header img {
+	width: 40px;
+	height:40px;
+}	 
+
+nav a:hover {
+	color:#0065FC;
+}
 	
-	nav>ul>li 
-		{
-		margin-right: 25px;
-		font-size: small;
-		}
+nav>ul {
+	display: flex;
+}
+	
+nav>ul>li {
+	margin-right: 25px;
+	font-size: x-small;
+}
 
 	/*retirer puces, retirer surlignage lien, retirer décoration lien qd déjà visité) */ 
  	ul 
@@ -53,6 +53,7 @@ h1
 	{
 	font-weight: bold;
 	font-size: large;
+	font-size: 17px;
  	}
 	
 h2 
@@ -61,11 +62,97 @@ h2
 	font-size:small;
  	}
 
-p 
-	{
-	font-size: small;
+p {
+	font-size: x-small;
+}
+
+.circle-info-icone {
+	background-color: white;
+	color: #0065FC;
+	border: #F2F2F2 solid 1px;
+}
+
+/*BARRE DE RECHERCHE*/
+.recherche { 
+	height: 46px;
+	width:30%;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.localisation {
+	height: 44px;
+	width: 46px;
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top: 1px #F2F2F2 solid;
+	border-bottom: 1px #F2F2F2 solid;
+	padding: 5px;
+}
+
+.selection {
+	height: 44px;
+	width: 175px;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+	border-top: 1px #F2F2F2 solid;
+	border-bottom: 1px #F2F2F2 solid;
+	padding-left: 10px;
+}
+
+.bouton-recherche {
+	height:44px;
+	width: 90px;
+	background-color:#0065FC;
+	color:white;
+	text-align: center;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top: 1px #0065FC solid;
+	border-bottom: 1px #0065FC solid;
+}
+
+.bouton-recherche:hover {
+	color : black;
+	background-color:#DEEBFF;
 	}
 
+.Bouton-icone {
+	display: none;
+	}
+
+/*FILTRES*/
+.filtres {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+}
+
+.filtres>h2 {
+	margin-right: 20px;
+}
+
+.filtres-icone-text {
+	width: 20%;
+	border: 2px solid #F2F2F2;
+	height: 46px;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+
+
+article {
+	height: 244px;
+	width: 200px;
+} 
 
 .info 
 	{
@@ -100,6 +187,7 @@ p
 	{
 	border: 1px white solid;
 	border-radius: 10px;
+	width : 200px;
 	}
 
 #conteneur-activites>article
@@ -115,6 +203,7 @@ p
 	justify-content: center;
 	gap: 4px;
 	flex-wrap: wrap;
+	width : 879px;
 	}
 
 .les-plus-populaires 
@@ -123,6 +212,7 @@ p
 	flex-direction: column;
 	justify-content: center;
 	gap: 4px;
+	width : 417px;
 	}
 
 #conteneur-activites
