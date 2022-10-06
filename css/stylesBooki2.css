@@ -266,30 +266,43 @@ nav a:hover {
 
 /*---Conteneur-hebergements et les plus populaires--*/
 
-
-/*---Sous conteneur Hébergements--*/
-
 #conteneur-hebergements-populaires {   
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: row;
     gap: 25px;
     margin: 0px 25px 25px 25px;
 }
 
+.carte-nom-marseille span, .carte-nom-populaires span {
+    font-weight: bold;}
+
+/*---Sous conteneur Hébergements--*/
+
 .bloc-hebergements {
     box-sizing: border-box;
-    /*width: 61%;
-    height:30%;*/
+    width: 61%;
+    height:40%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 25px;
     background-color: #F2F2F2;
     border-radius: 5%;
 }
+.bloc-hebergements>h2, h3 {
+    display: inline-flex;
+}
+.bloc-hebergements>h2 {
+    padding-bottom: 12.5px;
+}
 
 .bloc-hebergements>.articles {
     box-sizing: border-box;
+    width: 100%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -299,60 +312,74 @@ nav a:hover {
 
 .carte-hebergements-marseille {
     box-sizing: border-box;
+    width: 30%;
+    height: 48%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 172px;
-    max-height: 134px;
     background-color: white;
     border: 1px solid white;
     border-radius: 5%;
 }
-
-.carte-hebergements-marseille>img {
+.carte-hebergements-marseille>.carte-image-marseille {
+    width: auto;
+    height: 61%;
+}
+.carte-hebergements-marseille img {
+    width: 100%;
+    height: auto ;
     object-position: top;
     object-fit: cover;
 }
+.carte-hebergements-marseille>.carte-nom-marseille {
+    height: 39%;
+    width: auto;
+}
 
+/*---Sous conteneur populaires--*/
 .bloc-populaires {
+    width: 39%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 25px;
     padding: 25px;
     background-color: #F2F2F2;
     border-radius: 5%;
+    
 }
 
 .titre-populaires {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline-flex;
     margin-bottom: 25px;
 }
 
 .carte-hebergements-populaires {
     box-sizing: border-box;
-    width: 238px;
-    height: 91.5px;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+    border: 1px solid white;
     border-radius: 5%;
 }
 
 .carte-hebergements-populaires img {
-    width: 86.7px;
-    height: 91.5px;
+    width: 37%;
+    height: 100%;
     float: left;
     object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px 0px 0px 0px;
 }
-.carte-nom-populaires {
+.carte-texte-populaires {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    column-gap: 25px;
-    height: 91.5px;
-    width: 151.3px;
+    justify-content: space-between;
+    padding-left: 12.5px;
 }  
+
 .carte-star-rating {
     margin-left: 2.5px;
 }
