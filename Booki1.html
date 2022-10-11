@@ -17,7 +17,10 @@
 <body>
 <div id="bloc-page">
 
- <!--NAVIGATION-->
+
+ <!-----------------------------------
+-------------NAVIGATION---------------
+ ------------------------------------->
     <header>
 	    <div class="logo">
             <img src="Images/logo/Booki.png" alt="logo Booki">
@@ -32,9 +35,13 @@
        
     <main>
 
-<!--Bandeau introduction, barre recherche, filtres-->
+
+<!----------------------------------------------------
+-------- Bandeau introduction, barre recherche, filtres
+------------------------------------------------------>
+
     <div class="conteneur-introduction">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2> 
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
         <p>En plein centre ville ou en pleine nature</p> 
         
         <section class="barre-recherche">    
@@ -43,8 +50,9 @@
             </div>
             <div class="selectionMarseille">
                 <form method="post" action="#">
-                <input class="selection" type="text" name="recherche" id="recherche" placeholder="Marseille, France">
-                </form> <!--color="black" weight-font="bold" font-size="small" size="30" maxlength="30" -->
+                    <input class="selection" type="text" name="recherche" id="recherche" value="Marseille, France">
+                    <!--en remplaçant placeholder par value -écriture en noir-->
+                </form>
             </div>
             <button class="bouton">
                 <span class="bouton-texte">Rechercher</span>
@@ -78,11 +86,14 @@
         </div>
     </div>
 
-<!--blocs hébergements et les plus populaires-->
+
+<!------------------------------------------------------
+--------blocs hébergements et les plus populaires-------
+-------------------------------------------------------->
     <div id="conteneur-hebergements-populaires">
        
         <section class="bloc-hebergements"> 
-            <h2>Hébergements à Marseille</h2>
+            <h1>Hébergements à Marseille</h1>
             <div class="articles">  
                 <article class="carte-hebergements-marseille">
                     <a href="#">
@@ -186,7 +197,7 @@
         
         <section class="bloc-populaires">
             <div class="titre-populaires">
-                <h2>Les plus populaires</h2>
+                <h1>Les plus populaires</h1>
                 <i class="fa-solid fa-star"></i>
             </div>
             <article class="carte-hebergements-populaires">
@@ -246,9 +257,12 @@
         </section>
     </div>
     
-<!--Conteneur Activités-->
+
+<!-------------------------------------------
+--------Conteneur Activités------------------
+--------------------------------------------->
     <div id="conteneur-activites">
-        <h2>Activités à Marseille</h2>
+        <h1>Activités à Marseille</h1>
         <div class ="articles-activites">
             <div class="colonne-une">
                 <article class="carte-grande">
@@ -298,23 +312,26 @@
     </div>        
     </main>
 
-<!--Bandeau liens informations site-->
+
+<!------------------------------------------
+--------Bandeau liens informations site-----
+-------------------------------------------->
     <footer>
         <div class="info-site">
-            <section class="titrefooter"><h3>A propos</h3> 
+            <section class="titrefooter"><h2>A propos</h2> 
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
                     <li><a href="#">Conditions générales de vente</a></li>
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </section>           
-            <section class="titrefooter"><h3>Nos hébergements</h3>
+            <section class="titrefooter"><h2>Nos hébergements</h2>
                 <ul>
                     <li><a href="#">Charte de qualité</a></li> 
                     <li><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </section>        
-            <section class="titrefooter"><h3>Assistance</h3>
+            <section class="titrefooter"><h2>Assistance</h2>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>
                     <li><a href="#">Nous contacter</a></li>

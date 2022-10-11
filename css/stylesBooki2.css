@@ -1,11 +1,15 @@
-/*---STYLES PRINCIPAUX*---*/
+/*------------------------
+-----STYLES PRINCIPAUX*---
+--------------------------*/
 
 #bloc-page {
     box-sizing: border-box;
-    width: 992px;
+    min-width: 992px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap:25px;
 }
 
 body {
@@ -16,27 +20,32 @@ body {
 	background-color: white;
 }
 
+h1 {font-weight: bold;
+    font-size:26px;
+    margin:0px;
+}
+
 h2 {
     font-weight: bold;
-    font-size:medium;
+    font-size:21px;
     margin:0px;
 }
 
 h3 {
 	font-weight: bold;
-	font-size:x-small;
+	font-size:19px;
     margin:0px;
  	}
 
 h4 {
     font-weight: bold;
-	font-size: x-small;
+	font-size: 15px;
     margin: 5px 0px 5px 2.5px;
 }
 
 p {
-	font-size: x-small;
-    margin: 2.5px ;
+	font-size: 15px;
+    margin: 0px;
 }
 
 
@@ -46,8 +55,9 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 25px 25px 25px 0px;   
+    padding: 25px 0px 25px 0px;   
 } 
 
 .logo {
@@ -58,7 +68,7 @@ header {
 }
 
 .logo img {
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     object-position: 50% 50%;
 }
@@ -70,7 +80,7 @@ nav>ul {
 }
 
 nav>ul>li {
-	font-size: x-small;
+	font-size: 19px;
 }
 
 ul {
@@ -87,7 +97,7 @@ a {
 
 nav a:hover {
 	color:#0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 4px solid #0065FC;
 }
 	
 
@@ -123,7 +133,7 @@ nav a:hover {
     }
     
     nav a:hover {
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 4px solid #0065FC;
         border-top: none;
         color:#0065FC;
     }
@@ -131,76 +141,81 @@ nav a:hover {
 }
 
 
-/*---CONTENEUR-INTRODUCTION ---*/
+/*---------------------------
+----CONTENEUR-INTRODUCTION ----
+--------------------------------*/
 
 .conteneur-introduction {
     display: flex;
     flex-direction: column;
-    padding-left: 2.5%;
+    padding-left: 25px;
+    gap:25px;
+}
+
+.conteneur-introduction p {
+    font-size: 19px;
 }
 
 /*---Barre de recherche ---*/
 .barre-recherche {
+    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    height:50px;
-    width: 290px;
-    border: 1px solid #F2F2F2;
+    width: fit-content;
+    height:58px;
+    border: 2px solid #F2F2F2;
     border-radius: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .localisation {
     box-sizing: border-box;
-    height:50px;
-    width: 50px;
-    display: block;
-    justify-content:center;
-    padding: 12.5px;
+    height:58px;
+    width: 58px;
+    padding: 20px 20px 5px 20px;
     background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
 }
 
 .selectionMarseille {
-    box-sizing: border-box;
-    height: 50px;
-    width: 168px;
+    display: block;
+    height: 58px;
+    width: 230px;
 }
-.selectionMarseille input {
-    border: none;
-  }
-input::placeholder{
-    color: black;
-    font-size: small;
-    font-weight: bold ;
-}
- /* input::placeholder {
-    font-size: small;
-    color: black;
-    font-weight: bold;}*/
 
-/*::placeholder {
+.selectionMarseille input {
+    box-sizing: border-box;
+    height: 58px;
+    width: 330px;
     border: none;
-    color: black;
+    font-size: 19px;
+    color:black;
     font-weight: bold;
-    font-size: small;
-    padding-left: 25px;
-}*/
+    justify-content: baseline;
+    text-align: left;
+    padding: 12.5px;  
+  }
+
+.bouton {
+    display: block;
+    height:58px;
+    width: 130px;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+}
 
 .bouton-texte {
-    height:50px;
-    width: 72px;
+    padding: 12.5px 0 12.5px 0;
     background-color:#0065FC;
 	color:white;
-	font-weight: bold;
-    font-size: small;
-    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: left;
     cursor: pointer;
 } 
 
 .bouton-texte:hover {
 	color : black;
-    background-color:#DEEBFF;
 }
 
 .Bouton-icone {
@@ -219,18 +234,18 @@ input::placeholder{
     cursor: pointer;
     }
 
-    .i {
+    .Bouton-icone .i {
     color: white;
     }
 }
 
 
-/*FILTRES*/
+/*------FILTRES------------*/
 .filtres {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    gap: 12.5px;
+    gap: 25px;
 }
 
 .filtre-box {
@@ -239,14 +254,14 @@ input::placeholder{
     align-items: baseline;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    padding: 5px 0px 5px 0px;
-    
+    padding: 10px 0px 10px 0px;
 }
 .filtre-icone {
-    object-position: left;
-    height: 45px;
-    width: 45px;
-    padding: 8px 10px 8px 10px ;
+    box-sizing: border-box;
+    height: 58px;
+    width: 58px;
+    object-position: center;
+    padding: 12.5px;
     border-radius: 50%;
     background-color: #DEEBFF;
     color:#0065FC;
@@ -254,21 +269,20 @@ input::placeholder{
 
 .filtre-texte {
     object-position: center;
-    height: 40px;
-    width: 40px;
+    height: 58px;
+    width: 58px;
     font-weight: bold;
-    font-size: x-small;
-    padding: 8px 8px 8px 0px ;
+    font-size: 19px;
+    padding: 10px 10px 10px 10px ;
 }
 
 .filtre-box a:hover {
     color: #0065FC; 
 }
 
+/*----Point information------*/
 .circle-info {
-    padding-bottom: 25px;
-    padding-top: 25px;
-    font-size: x-small;
+    font-size: 19;
 }
 .circle-info>i {
     background-color:white;
@@ -279,11 +293,12 @@ input::placeholder{
     color: #0065FC;
 }
 
-/*--------------------------------
--------CONTENEUR HEBERGEMENTS ----
------------------- et------------- 
--------LES PLUS POPULAIRES--------
---------------------------------*/
+
+/*---------------------------------
+-------CONTENEUR HEBERGEMENTS -----
+---------------et66666------------- 
+-------CONTENEUR POPULAIRES--------
+----------------------------------*/
 
 #conteneur-hebergements-populaires {   
     width: 100%;
@@ -291,7 +306,7 @@ input::placeholder{
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin: 0px 25px 25px 25px;
+    margin: 25px;
 }
 
 .carte-nom-marseille span, .carte-nom-populaires span {
@@ -536,5 +551,5 @@ input::placeholder{
 }
 
 .titrefooter>ul {
-    font-size: x-small;
+    font-size: 19px;
 }
