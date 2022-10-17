@@ -14,24 +14,24 @@ body {
 }
 
 h1 {font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     margin:0px;
 }
 
 h2 {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 14px;
     margin:0px;
 }
 
 h3 {
     font-weight: bold;
-	font-size: 15px;
+	font-size: 13px;
     margin: 5px 0 ;
 }
 
 p {
-	font-size: 13px;
+	font-size: 10px;
     margin: 0px;
 }
 
@@ -42,32 +42,29 @@ header {
     height:5.5%;
     display: flex;
     justify-content: space-between;
-    margin: 0 50px;   
+    margin: 0 25px;   
 } 
 
 .logo {
-    padding: 25px 12.5px 12.5px 12.5px ;
-}
+    padding: 23px 5px 0 5px ;}
 
 .logo img {
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
     object-position: 50% 50%;
-    padding-top: 12.5px;
 }
 
 nav>ul {
     display: flex;
     justify-content: space-between;
-    gap:25px;
 }
 
 ul {
 	list-style: none;
-    padding: 25px 0px;}
+    padding: 10px 10px;}
 
 nav>ul>li {
-	font-size: 15px;
+	font-size: 12px;
 }
 
 a {
@@ -77,7 +74,7 @@ a {
 }
 
 nav a {
-padding: 37.5px 25px 25px 25px;}
+padding: 22px 10px 0 10px;}
 
 nav a:hover {
 	color:#0065FC;
@@ -88,33 +85,34 @@ nav a:hover {
 /* CONTENEUR-INTRODUCTION */
 
 .conteneur-introduction {
-    margin: 25px 50px;
+    margin: 25px;
     height: 17%;
 }
 
 .sous-titre {
-        font-size :16px;
-        padding: 12.5px 0 0 0;
+        font-size :12px;
+        padding: 10px 0 0 0;
     }
 
 /* Barre de recherche */
 
 .barre-recherche {
-    margin : 25px 0;
+    margin : 25px 0px 25px 3px;
+    width: 30%;
     position: relative;
     display: inline-flex;
     align-items: baseline;
-    height:50px;
+    height:44px;
     border: 2px solid #F2F2F2;
     border-radius: 15px;
 }
 
 .localisation {
-    width: 50px;
-    padding: 15px 15px 10px 15px;
+    width: 44px;
+    padding: 10px 15px 25px 15px;
     position: absolute;
-    left:0;
-    right: 500px;
+    left:-3px;
+    right: 400px;
     top:0;
     bottom:0;
     background-color: #F2F2F2;
@@ -122,18 +120,17 @@ nav a:hover {
 }
 
 .selectionMarseille {
-    width: 300px;
+    width: 100px;
     position: absolute;
-    left: 50px;
-    right: 50px;
+    left: 47px;
 
 }
 
 .selectionMarseille input {
-    width: 300px;
-    padding:12px 0px 12px 25px;
+    width: 170px;
+    padding:10px 0px 10px 5px;
     border: none;
-    font-size: 18px;
+    font-size: 13px;
     color:black;
     font-weight: bold;
     text-align: left;
@@ -141,9 +138,9 @@ nav a:hover {
   }
 
 .bouton {
-    width: 130px;
+    width: 90px;
     position: absolute;
-    left: 290px;
+    left: 210px;
     right: 0;
     top:0;
     bottom:0;
@@ -155,8 +152,8 @@ nav a:hover {
 .bouton-texte {
     background-color:#0065FC;
 	color:white;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 13px;
+    
     cursor: pointer;
 } 
 
@@ -176,7 +173,7 @@ nav a:hover {
     margin-bottom: 25px;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 15px;
+    gap: 20px;
 }
 
 .filtre-box {
@@ -186,17 +183,16 @@ nav a:hover {
     position: relative;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    height: 50px;
-    padding: 5px;
+    height: 44px;
 }
 .filtre-icone {
     display: flex;
     position: absolute;
-    left:0;
-    top: 0;
+    left:-2px;
+    top: -2px;
     bottom: 0;
-    height: 50px;
-    width: 50px;
+    height: 44px;
+    width: 44px;
     border-radius: 50px;
     background-color: #DEEBFF;
     color:#0065FC;
@@ -206,10 +202,10 @@ nav a:hover {
 }
 
 .filtre-texte {
-    height: 50px;
+    height: 44px;
     font-weight: bold;
-    font-size: 16px;
-    padding: 10px 10px 10px 55px ;
+    font-size: 13px;
+    padding: 10px 10px 10px 52px ;
 }
 
 .filtre-box a:hover {
@@ -219,14 +215,14 @@ nav a:hover {
 /* Point information */
 
 .circle-info {
-    font-size: 15px;
+    font-size: 12px;
 }
 .circle-info>i {
     background-color:white;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    padding: 10px;
-    margin-right: 10px;
+    padding: 5px;
+    margin-right: 5px;
     color: #0065FC;
 }
 
@@ -235,7 +231,7 @@ nav a:hover {
 
 #conteneur-hebergements-populaires {  
     height: 39%;
-    margin: 0 50px ;
+    margin: 0 25px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -252,27 +248,28 @@ nav a:hover {
     width: 66%;
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    flex-wrap: wrap;
+    padding: 12.5px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
 .bloc-hebergements>h1 {
-    padding-bottom: 25px;
+    padding-bottom: 12.5px;
 }
 .bloc-hebergements>.articles-hebergements {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 25px;
+    column-gap: 20px;
 }
 
 .ligne-cartes {
     height: 224px;
     display: flex;
     justify-content: space-between;
-    row-gap: 25px;
-    padding-bottom: 25px;
+    row-gap: 20px;
+    padding-bottom: 12.5px;
 }
 
 .carte-hebergements-marseille {
@@ -397,7 +394,7 @@ nav a:hover {
 
 #conteneur-activites {
     height: 32%;
-    margin: 25px 50px;
+    margin: 25px 25px;
 }
 
 #conteneur-activites>h1 {
@@ -408,7 +405,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 25px;
+    row-gap: 12.5px;
 }
 
 .colonne-une {
@@ -420,7 +417,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    column-gap: 25px;
+    column-gap: 20px;
 }
 
 .carte-grande {
@@ -476,7 +473,6 @@ nav a:hover {
     object-position: 35% 25%;
 }
 .articles-activites h3 {
-    font-size: 15px;
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -492,8 +488,8 @@ nav a:hover {
     display:flex;
     background-color: #F2F2F2;
     margin: 25px 0;
-    padding: 25px 50px 0 50px;
-    gap: 300px;
+    padding: 12.5px 12.5px 0 12.5px;
+    gap: 200px;
 }
 
 .titrefooter>h2 {
@@ -501,16 +497,19 @@ nav a:hover {
 }
 
 .titrefooter>ul {
-    font-size: 15px;
-    margin:0;
+    font-size: 13px;
+    padding: 0;
 }
 
 
 /* media queries */
 
-/*---VERSION TABLETTE
-@media screen and (min-width:768px) and (max-width:991px) {}
----*/
+/*---VERSION TABLETTE---*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+
+}
 
 /* VERSION MOBILE */
 
@@ -536,7 +535,6 @@ header {
 
 nav>ul {
         justify-content: space-between;
-        font-size: 19px;
     }
     
 nav a:hover {
