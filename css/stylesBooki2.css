@@ -5,6 +5,8 @@
 
 body {
     margin: auto;
+    min-width: 992px;
+    max-width: 1400px;
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	color:black;	 
@@ -12,24 +14,24 @@ body {
 }
 
 h1 {font-weight: bold;
-    font-size:22px;
+    font-size: 20px;
     margin:0px;
 }
 
 h2 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     margin:0px;
 }
 
 h3 {
     font-weight: bold;
-	font-size: 16px;
+	font-size: 15px;
     margin: 5px 0 ;
 }
 
 p {
-	font-size: 14px;
+	font-size: 13px;
     margin: 0px;
 }
 
@@ -37,6 +39,7 @@ p {
 /* Header */
 
 header {
+    height:5.5%;
     display: flex;
     justify-content: space-between;
     margin: 0 50px;   
@@ -64,7 +67,7 @@ ul {
     padding: 25px 0px;}
 
 nav>ul>li {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 a {
@@ -86,6 +89,7 @@ nav a:hover {
 
 .conteneur-introduction {
     margin: 25px 50px;
+    height: 17%;
 }
 
 .sous-titre {
@@ -172,7 +176,7 @@ nav a:hover {
     margin-bottom: 25px;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 25px;
+    gap: 15px;
 }
 
 .filtre-box {
@@ -204,7 +208,7 @@ nav a:hover {
 .filtre-texte {
     height: 50px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 10px 10px 55px ;
 }
 
@@ -215,7 +219,7 @@ nav a:hover {
 /* Point information */
 
 .circle-info {
-    font-size: 16px;
+    font-size: 15px;
 }
 .circle-info>i {
     background-color:white;
@@ -229,43 +233,51 @@ nav a:hover {
 
 /* CONTENEUR HEBERGEMENTS et CONTENEUR POPULAIRES */
 
-#conteneur-hebergements-populaires {   
-    height: 40%;
+#conteneur-hebergements-populaires {  
+    height: 39%;
+    margin: 0 50px ;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 25px;
-    margin: 25px 50px ;
+    justify-content: space-between;
 }
 
 .carte-nom-marseille span, .carte-nom-populaires span {
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 
 /* Sous conteneur Hébergements */
 
 .bloc-hebergements {
-    width: 57%;
-    height:40%;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
     padding: 25px;
     background-color: #F2F2F2;
     border-radius: 15px;
 }
-
-.bloc-hebergements>.articles {
+.bloc-hebergements>h1 {
+    padding-bottom: 25px;
+}
+.bloc-hebergements>.articles-hebergements {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 25px;
     column-gap: 25px;
-    padding: 25px 0;
+}
+
+.ligne-cartes {
+    height: 224px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 25px;
+    padding-bottom: 25px;
 }
 
 .carte-hebergements-marseille {
     position: relative;
-    width: 240px;
-    height: 200px;
+    width: 30.5%;
     border: 3px solid white;
     display: flex;
     flex-direction: column;
@@ -295,30 +307,36 @@ nav a:hover {
     top: 111px;
     border-radius: 0 0 15px 15px;
     background-color: white;
-    }
+}
 
 .carte-star-rating {
         margin-top: 5px;
-    }
+}
 
 .carte-star-rating>i {
     color: #0065FC;
     width: 12px;
     margin-right: 2px; 
 }
+
 .carte-star-rating span {
     color:#F2F2F2;
     width: 12px;
     margin-right: 2px;
 }
 
+/*.bloc-hebergements>h2 {
+    padding-top: 25px;
+}*/
+
 /* Sous conteneur populaires*/
 
 .bloc-populaires {
-    width: 37%;
-    height: 40%;
+    width: 31%;
+    height: 39%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 25px;
     padding: 25px;
     background-color: #F2F2F2;
@@ -326,17 +344,22 @@ nav a:hover {
 }
 
 .titre-populaires {
-    display: flex;
     justify-content:space-between;
+    position: relative;
+}
+.titre-populaires>i {
+    position: absolute;
+    top: 0;
+    right: 5px;
 }
 
 .carte-hebergements-populaires {
     position: relative;
-    width: 350px;
     height: 140px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
     background-color: white;
     border: 3px solid white;
     border-radius: 15px;
@@ -373,8 +396,9 @@ nav a:hover {
 /* CONTENEUR ACTIVITES */
 
 #conteneur-activites {
-    height: 35%;
-    margin: 0 50px 25px 50px;}
+    height: 32%;
+    margin: 25px 50px;
+}
 
 #conteneur-activites>h1 {
     padding: 25px 0;
@@ -452,7 +476,7 @@ nav a:hover {
     object-position: 35% 25%;
 }
 .articles-activites h3 {
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -464,20 +488,21 @@ nav a:hover {
 /* footer */
 
 .info-site {
-    height: 10%;
+    height: 11.5%;
     display:flex;
     background-color: #F2F2F2;
     margin: 25px 0;
-    padding: 25px 50px;
+    padding: 25px 50px 0 50px;
     gap: 300px;
 }
 
 .titrefooter>h2 {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .titrefooter>ul {
-    font-size: 16px;
+    font-size: 15px;
+    margin:0;
 }
 
 
@@ -491,16 +516,18 @@ nav a:hover {
 
 @media screen and (max-width:767px) {
 
+body {width: 375px;}
+
 header {
     display: block;
     justify-content: center;
-    margin: none;
+    margin: 0;
     } 
     
     
 .logo {
         justify-content: center;
-        padding: none;
+        padding: 0;
     }
 
 .logo img {
@@ -514,20 +541,20 @@ nav>ul {
     
 nav a:hover {
         border-bottom: 4px solid #0065FC;
-        border-top: none;
+        border-top: 0;
         color:#0065FC;
     }
 
 .conteneur-introduction{
-        margin: none;
+        margin: 0;
     }
-.conteneur-introduction>h1{
+.conteneur-introduction {
         white-space: wrap;
     }
 
     #conteneur-hebergements-populaires{
         height: auto;
-        margin: none;
+        margin: 0;
         flex-direction: column;
         justify-content: center;
     }
@@ -552,21 +579,24 @@ nav a:hover {
         justify-content: center;
     }
 
-    footer{
+    footer {
         flex-direction: column;
         justify-content: center;
     }
   
-      .Bouton-icone:hover{}
+.Bouton-icone:hover{}
   
-      .Bouton-icone {
+.Bouton-icone {
       background-color: #0065FC;
       display: block;
       justify-content: center;
       cursor: pointer;
       }
-  
-      .Bouton-icone .i {
+.bouton-texte {
+    display: none;
+  }
+
+  .Bouton-icone .i {
       color: white;
       }
   }
