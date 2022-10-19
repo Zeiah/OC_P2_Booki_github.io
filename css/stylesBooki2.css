@@ -31,7 +31,7 @@ h3 {
 }
 
 p {
-	font-size: 12px;
+	font-size: 13px;
     margin: 0px;
 }
 
@@ -112,7 +112,6 @@ nav a:hover {
 .localisation {
     width: 50px;
     padding: 15px 15px 15px 20px;
-    margin: auto;
     position: absolute;
     left:-3px;
     right: 305px;
@@ -225,9 +224,10 @@ nav a:hover {
 /* Point information */
 
 .circle-info {
-    font-size: 14px;
     padding-bottom: 10px;
+    font-size: 14px;
 }
+
 .circle-info>i {
     background-color:white;
     border: 2px solid #F2F2F2;
@@ -270,15 +270,8 @@ nav a:hover {
     padding-bottom: 25px;
 }
 
-/*.bloc-hebergements>.articles-hebergements {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 25px;
-}*/
-
 .ligne-cartes {
-    height: 175px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
     row-gap: 25px;
@@ -300,26 +293,26 @@ nav a:hover {
     left: 0px;
     right: 0px;
     width: 100%;
-    height: 100px;
+    height: 102px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
 .carte-nom-marseille {
-    padding : 3px 0 3px 5px;
+    padding-right : 10px;
     height: auto;
     width: 100%;
     position: absolute;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    top: 100px;
+    top: 102px;
     border-radius: 0 0 15px 15px;
     background-color: white;
 }
 
 .carte-star-rating {
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .carte-star-rating>i {
@@ -379,7 +372,7 @@ nav a:hover {
     top:0;
     bottom: 0;
     left: 0;
-    width: 125px;
+    width: 114px;
     height: 100%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
@@ -391,12 +384,12 @@ nav a:hover {
     position: absolute;
     top:0;
     bottom: 0;
-    left: 131px;
-    padding: 5px 0 5px 5px;
+    left: 114px;
+    padding: 10px 0 10px 10px;
 }  
 
 .carte-texte-populaires:nth-last-child(1){
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .carte-texte-populaires>.carte-star-rating{
     position: absolute;
@@ -434,33 +427,29 @@ nav a:hover {
     column-gap: 20px;
 }
 
-.carte-grande {
+.carte-grande, .carte-moyenne, .carte-petite {
     display: flex;
     flex-direction: column;
-    position:relative;
-    height:400px;
+    position: relative;
+    overflow: hidden;
     border: 3px solid #F2F2F2;
     border-radius: 15px;
-    overflow: hidden;
+    box-shadow: 4px 4px 4px #F2F2F2;
 }
+
+.carte-grande {
+    height:400px;   
+}
+
 .carte-moyenne {
-    display: flex;
-    position:relative;
     height: 215px;
-    border: 3px solid #F2F2F2;
-    border-radius: 15px;
-    overflow: hidden;
 }
 
 .carte-petite {
-    display: flex;
-    position:relative;
     height: 160px;
     margin: 0;
-    border: 3px solid #F2F2F2;
-    border-radius: 15px;
-    overflow: hidden;
 }
+
 .articles-activites img {
     margin: auto;
     object-fit: cover;
@@ -517,7 +506,7 @@ object-position: top;}
 }
 
 .titrefooter>h2 {
-    font-size: 15px;
+    font-size: 14px;
 }
 .titrefooter:nth-child(2) {
     padding-right: 250px;
@@ -699,11 +688,11 @@ nav a:hover {
 
 .conteneur-introduction {
  margin: 20px;
-    gap: 20px;
+    gap: 25px;
     }
 
 h1{
-    font-size: 21px;
+    font-size: 22px;
     white-space: wrap;
 }
 
@@ -723,12 +712,11 @@ h1{
 
 .selectionMarseille {
     width: 100px;
-    font-size: 16px;
 }
 
 .selectionMarseille input {
     width: 185px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
 .bouton {
@@ -745,10 +733,11 @@ h1{
 }   
 
 .Bouton-icone i {
-    width:130%;
+    font-size: medium;
+    font-weight: medium;
 }
 
-h2 {font-size: 17px;}
+h2 {font-size: 18px;}
 
 .filtres {
     flex-direction: column;
@@ -758,8 +747,29 @@ h2 {font-size: 17px;}
     flex-wrap: wrap;
     gap: 12.5px;
 }
+.filtre-icone>i {
+    font-size: medium;
+    font-weight: bold;
+}
 .filtre-texte {
     font-size: 16px;
+}
+
+.circle-info{
+    display: flex;
+    font-size: 16px;
+}
+.circle-info:nth-child(1) {
+    flex: 0;
+    padding-left: 15px;
+}
+.circle-info:nth-child(2){
+    flex-basis: 6px;
+}
+
+.circle-info>i {
+    font-weight: bold;
+    font-size: medium;
 }
 
 #conteneur-hebergements-populaires {
@@ -767,7 +777,116 @@ h2 {font-size: 17px;}
     height: auto;
     flex-direction: column-reverse;
     justify-content: center;
+    column-gap: 12.5px;
+    margin:0;
+}
+
+.bloc-hebergements {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 12,5px;
+}
+
+
+.articles-herbergements {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12.5px;
+}
+
+.ligne-cartes {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 12.5px;
+}
+
+.carte-hebergements-marseille {
+    height: 199px;
+    width: 100%;
+    box-shadow: 5px 5px 5px #F2F2F2;
+    }
+
+.carte-hebergements-marseille img {
+        height: 129px;
+    }
+
+.carte-nom-marseille {
+    left:0;
+    right: 0;
+        top: 129px;
+        padding-right: 10px;
+    }  
+    
+.bloc-populaires{
+    width: 100%;
+    justify-content: center;
+    padding: 25px 12.5px 25px 12.5px;
+    border-radius: 0
+}
+
+.carte-hebergements-populaires {
+    height: 144px;
+}
+
+.carte-hebergements-populaires img {
+        width: 159px;
+        height: 100%;
+    }
+
+.carte-texte-populaires{
+left:159px;
+    }
+
+#conteneur-activites {
+        height: auto;
+        margin: 0 12.5px;
+    }
+
+.articles-activites {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+.colonne-une, .colonne-deux {
+    width: 100%; 
+}
+
+.carte-grande, .carte-moyenne, .carte-petite {
+    height: 190px;
+    margin-bottom: 25px;
+}
+
+.carte-grande>img, .carte-moyenne>img, .carte-petite>img {
+    height: 134px;
+}
+.carte-grande, .carte-moyenne, .carte-petite {
+    height: 190px;
+}
+
+.info-site {
+    flex-direction: column;
+    padding: 25px 12.5px;
     column-gap: 25px;
 }
 
+.titrefooter>h2{
+    font-size: 18px;
+}
+
+.titrefooter:nth-child(2) {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.titrefooter>ul {
+    font-size: 16px;
+}
+
+.titrefooter li{
+    padding-bottom: 15px;
+}
 }
