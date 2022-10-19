@@ -24,8 +24,8 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#conteneur-hebergements-et-lespluspopulaires">Hébergements</a></li>     
-                <li><a href="#conteneuractivites">Activités</a></li>
+                <li><a href="#conteneur-hebergements-populaires">Hébergements</a></li>     
+                <li><a href="#conteneur-activites">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -36,12 +36,14 @@
 <!-- Bandeau introduction, barre recherche, filtres -->
 
     <div class="conteneur-introduction">
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
-        <p class="sous-titre">En plein centre ville ou en pleine nature</p> 
-        
+        <section class="titre">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1> 
+            <p class="sous-titre">En plein centre ville ou en pleine nature</p> 
+       </section> 
+
         <section class="barre-recherche">    
             <div class="localisation">
-                <i class="fa fa-map-marker-alt fa-sm"></i>
+                <i class="fa fa-map-marker-alt fa-lg"></i>
             </div>
             <div class="selectionMarseille">
                 <form method="post" action="#">
@@ -51,27 +53,29 @@
             </div>
             <button class="bouton">
                 <span class="bouton-texte">Rechercher</span>
-                <span class="Bouton-icone"><i class="fa fa-search fa-1.5x"></i></span>
+                <span class="Bouton-icone"><i class="fa fa-search fa-sm"></i></span>
             </button>  
         </section>
         
         <section class="filtres">
             <h2>Filtres</h2>
-            <div class="filtre-box">
-                <span class="filtre-icone"><i class="fa-solid fa-money-bill-wave fa-sm"></i></span>
-                <span class="filtre-texte"><a href="#">Économique</a></span>
-            </div>
-            <div class="filtre-box"> 
-                <span class="filtre-icone"><i class="fa-solid fa-child-reaching fa-sm"></i></span>
-                <span class="filtre-texte"><a href="#">Familial</a></span>
+            <div class="les-box">
+                <div class="filtre-box">
+                    <span class="filtre-icone"><i class="fa-solid fa-money-bill-wave fa-sm"></i></span>
+                    <span class="filtre-texte"><a href="#">Économique</a></span>
                 </div>
-            <div class="filtre-box">   
-                <span class="filtre-icone"><i class="fa-solid fa-heart fa-sm"></i></span>
-                <span class="filtre-texte"><a href="#">Romantique</a></span>
-            </div>
-            <div class="filtre-box">   
-                <span class="filtre-icone"><i class="fa-solid fa-dog fa-sm"></i></span>
-                <span class="filtre-texte"><a href="#">Animaux autorisés</a></span>
+                <div class="filtre-box"> 
+                    <span class="filtre-icone"><i class="fa-solid fa-child-reaching fa-sm"></i></span>
+                    <span class="filtre-texte"><a href="#">Familial</a></span>
+                </div>
+                <div class="filtre-box">   
+                    <span class="filtre-icone"><i class="fa-solid fa-heart fa-sm"></i></span>
+                    <span class="filtre-texte"><a href="#">Romantique</a></span>
+                </div>
+                <div class="filtre-box">   
+                    <span class="filtre-icone"><i class="fa-solid fa-dog fa-sm"></i></span>
+                    <span class="filtre-texte"><a href="#">Animaux autorisés</a></span>
+                </div>
             </div>                         
         </section>
         
