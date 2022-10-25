@@ -98,6 +98,7 @@ nav a:hover {
         padding: 10px 0 0 0;
 }
 
+
 /* Barre de recherche */
 
 .barre-recherche {
@@ -176,13 +177,15 @@ nav a:hover {
 
 .filtres {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
-    gap: 27px;
+    width: 71%;  
 }
 
 .les-box {
-    display: inline-flex;
-    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .filtre-box {
@@ -192,7 +195,7 @@ nav a:hover {
     position: relative;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    height: 50px;
+    height: 45px;
 }
 
 .filtre-icone {
@@ -201,8 +204,8 @@ nav a:hover {
     left:-2px;
     top: -2px;
     bottom: 0;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border-radius: 50px;
     background-color: #DEEBFF;
     color:#0065FC;
@@ -213,15 +216,16 @@ nav a:hover {
 }
 
 .filtre-texte {
-    height: 50px;
+    height: 45px;
     font-weight: bold;
     font-size: 15px;
-    padding: 10px 10px 10px 55px;
+    padding: 10px 10px 0px 53px;
 }
 
 .filtre-box a:hover {
     color: #0065FC; 
 }
+
 
 /* Point information */
 
@@ -283,7 +287,8 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     row-gap: 25px;
-    margin-bottom: 25px;}
+    margin-bottom: 25px;
+}
 
 .carte-hebergements-marseille {
     position: relative;
@@ -385,6 +390,7 @@ nav a:hover {
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
+
 .carte-texte-populaires {
     display: flex;
     flex-direction: column;
@@ -396,13 +402,9 @@ nav a:hover {
     padding: 10px 0 10px 10px;
 }  
 
-.carte-texte-populaires:nth-last-child(1){
-    padding-right: 20px;
-}
-
-.carte-texte-populaires>.carte-star-rating{
+.carte-texte-populaires>.carte-star-rating {
     position: absolute;
-    bottom:4px;   
+    bottom: 4px;   
 }
 
 
@@ -522,6 +524,7 @@ nav a:hover {
 /* footer */
 
 .info-site {
+    width: 100%;
     display:flex;
     background-color: #F2F2F2;
     padding: 25px 25px 0 25px;
@@ -541,21 +544,22 @@ nav a:hover {
     padding-left: 190px;
 }
 
+
 /* media queries */
 
 /*VERSION MAQUETTE 992px*/
-@media screen and (min-width: 992px) and (max-width:1050px) {
+@media screen and (min-width: 992px) and (max-width:1100px) {
 
 body {
     min-width: 992px;
-    max-width: 1050px;
+    max-width: 1100px;
 }
     
 h1 {
     font-size: 16px;
 }
     
-h2 {
+h2, .bouton-texte {
     font-size: 13px;
 }
     
@@ -571,16 +575,8 @@ nav>ul {
     gap: 15px;
 }
 
-nav>ul>li {
+nav>ul>li, .sous-titre {
     font-size: 12px;    
-}
-    
-.sous-titre {
-    font-size :12px;
-}
-
-.bouton-texte {
-    font-size: 13px;
 }
 
 .barre-recherche {
@@ -822,10 +818,12 @@ h1 {
 .filtres {
     flex-direction: column;
     gap: 12.5px;
+    width: 100%;
 } 
 
 .les-box {
     gap: 12.5px;
+    width: 100%;
 }
 
 .filtre-texte {
@@ -1022,11 +1020,14 @@ nav a:hover {
 .filtres {
     flex-direction: column;
     gap: 12.5px;
+    width: 100%;
 } 
 
 .les-box {
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 12.5px;
+    width: 100%
 }
 
 .filtre-icone>i {
@@ -1141,16 +1142,18 @@ nav a:hover {
 }
 
 .carte-grande-1, .carte-grande-4, .carte-moyenne-2, .carte-moyenne-6, .carte-petite-3, .carte-petite-5 {
-    height: 190px;
+    height: 185px;
     margin-bottom: 25px;
 }
 
 .carte-grande-1>img, .carte-grande-4>img, .carte-moyenne-2>img, .carte-moyenne-6>img, .carte-petite-3>img, .carte-petite-5>img {
-    height: 134px;
+    height: 139px;
 }
 
 .carte-grande-1>img {
-    object-position: 45% 30%; 
+    object-position: 45% 30%;
+    bottom: 50px;
+    top:0;
 }
 
 .carte-petite-3>img {
