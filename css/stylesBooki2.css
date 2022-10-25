@@ -13,18 +13,18 @@ body {
 	background-color: white;
 }
 
-h1 {font-weight: bold;
+h1, h2 {font-weight: bold;
     font-size: 19px;
     margin:0px;
 }
 
-h2 {
+h3 {
     font-weight: bold;
     font-size: 16px;
     margin:0px;
 }
 
-h3 {
+h4 {
     font-weight: bold;
 	font-size: 14px;
     margin: 5px 0 ;
@@ -102,7 +102,7 @@ nav a:hover {
 /* Barre de recherche */
 
 .barre-recherche {
-    margin left: 3px;
+    margin-left: 3px;
     width: 355px;
     position: relative;
     display: inline-flex;
@@ -247,7 +247,6 @@ nav a:hover {
 
 .circle-info>p {
     font-size: 14px;
-    justify-content: baseline; 
 }
 
 /* CONTENEUR HEBERGEMENTS et CONTENEUR POPULAIRES */
@@ -278,7 +277,7 @@ nav a:hover {
     border-radius: 15px;
 }
 
-.bloc-hebergements>h1 {
+.bloc-hebergements>h2 {
     padding-bottom: 25px;
 }
 
@@ -340,7 +339,7 @@ nav a:hover {
     margin-right: 4px;
 }
 
-.bloc-hebergements h2 {
+.bloc-hebergements h3 {
     padding-top: 10px;
 }
 
@@ -509,7 +508,7 @@ nav a:hover {
     object-position: 40% 25%;
 }
 
-.articles-activites h3 {
+.articles-activites h4 {
     padding: 5px 0 10px 15px;
     background-color: white;
     position: absolute;
@@ -555,15 +554,15 @@ body {
     max-width: 1100px;
 }
     
-h1 {
+h1, h2 {
     font-size: 16px;
 }
     
-h2, .bouton-texte {
+h3, .bouton-texte {
     font-size: 13px;
 }
     
-h3 {
+h4 {
     font-size: 11px;
 }
 
@@ -627,7 +626,7 @@ nav>ul>li, .sous-titre {
 .filtre-texte {
     height: 40px;
     font-size: 13px;
-    padding: 10px 10x 10px 45px;
+    padding: 10px 10px 10px 45px;
 }
 
 .filtre-icone {
@@ -692,7 +691,7 @@ nav>ul>li, .sous-titre {
     height: 82px;
 }
 
-.articles-activites h3 {
+.articles-activites h4 {
     padding: 10px;
 }
 
@@ -700,7 +699,7 @@ nav>ul>li, .sous-titre {
     display:flex;
 }
 
-.titrefooter>h2, .titrefooter>ul {
+.titrefooter>h3, .titrefooter>ul {
     font-size: 13px;
 }
 
@@ -763,7 +762,7 @@ nav a:hover {
     gap: 20px;
 } 
 
-h1 {   
+h1, h2 {   
     font-size: 22px;
 }
 
@@ -808,7 +807,7 @@ h1 {
 }   
 
 .Bouton-icone>i {
-    width:130%;
+    font-size: 16px;
 }
 
 .bouton-texte {
@@ -888,7 +887,7 @@ h1 {
     flex: none;    padding-left: 0;
 }
 
-.titrefooter>h2, .titrefooter>ul {
+.titrefooter>h3, .titrefooter>ul {
     font-size: 13px;
 }
 
@@ -903,15 +902,15 @@ body {
     min-width: 320px;
 }
 
-h1 {
+h1, h2 {
     font-size: 22px;
 }
 
-h2 {
+h3 {
     font-size: 18px;
 }
 
-h3 {
+h4 {
     font-size: 15px
 }
 
@@ -1010,12 +1009,8 @@ nav a:hover {
 .Bouton-icone {
     display: flex;
     justify-content: center;
-}   
-
-.Bouton-icone {
     font-size: 19px;
-    font-weight: medium;
-}
+}   
 
 .filtres {
     flex-direction: column;
@@ -1031,8 +1026,7 @@ nav a:hover {
 }
 
 .filtre-icone>i {
-    font-size: medium;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 .filtre-texte {
@@ -1169,10 +1163,6 @@ nav a:hover {
     flex-direction: column;
     padding: 25px 12.5px;
     column-gap: 25px;
-}
-
-.titrefooter>h2{
-    font-size: 18px;
 }
 
 .titrefooter:nth-child(2) {
