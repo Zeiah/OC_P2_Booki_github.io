@@ -414,7 +414,7 @@ nav a:hover {
     margin: 25px 25px;
 }
 
-#conteneur-activites>h1 {
+#conteneur-activites>h2 {
     padding: 25px 0;
 }
 
@@ -527,10 +527,9 @@ nav a:hover {
     display:flex;
     background-color: #F2F2F2;
     padding: 25px 25px 0 25px;
-    width: 77%;
 }
 
-.titrefooter>h2 {
+.titrefooter>h3 {
     font-size: 14px;
 }
 
@@ -539,9 +538,12 @@ nav a:hover {
     padding: 0;
 }
 .titrefooter:nth-child(2) {
-    flex:1;
-    padding-left: 190px;
+    padding-left: 16%;
 }
+ .titrefooter:nth-child(3) {
+    padding-left : 21%;
+ }
+  
 
 
 /* media queries */
@@ -704,9 +706,13 @@ nav>ul>li, .sous-titre {
 }
 
 .titrefooter:nth-child(2) {
-    flex:1;
-    padding-left: 130px;
+    padding-left: 14%;
 }
+
+.titrefooter:nth-child(3) {
+    padding-left : 20%;
+ }
+  
 }
 
 /*---VERSION TABLETTE---*/
@@ -883,8 +889,8 @@ h1, h2 {
    justify-content: space-between;
     width: 100%;
 }
-.titrefooter:nth-child(2) {
-    flex: none;    padding-left: 0;
+.titrefooter:nth-child(2), .titrefooter:nth-child(3) {
+   padding-left: 0;
 }
 
 .titrefooter>h3, .titrefooter>ul {
@@ -1136,17 +1142,17 @@ nav a:hover {
 }
 
 .carte-grande-1, .carte-grande-4, .carte-moyenne-2, .carte-moyenne-6, .carte-petite-3, .carte-petite-5 {
-    height: 185px;
+    height: 180px;
     margin-bottom: 25px;
 }
 
 .carte-grande-1>img, .carte-grande-4>img, .carte-moyenne-2>img, .carte-moyenne-6>img, .carte-petite-3>img, .carte-petite-5>img {
-    height: 139px;
+    height: 140px;
 }
 
 .carte-grande-1>img {
     object-position: 45% 30%;
-    bottom: 50px;
+    bottom: 40px;
     top:0;
 }
 
@@ -1156,6 +1162,12 @@ nav a:hover {
 
 .carte-grande-4>img {
     object-position: 45% 35%;
+    bottom: 40px;
+    top:0;
+}
+
+.articles-activites h4 {
+    padding: 10px 0 10px 15px;
 }
 
 .info-site {
@@ -1165,9 +1177,8 @@ nav a:hover {
     column-gap: 25px;
 }
 
-.titrefooter:nth-child(2) {
-    padding-right: 0px;
-    padding-left: 0px;
+.titrefooter:nth-child(2), .titrefooter:nth-child(3) {
+    padding-left: 0;
 }
 
 .titrefooter>ul {
