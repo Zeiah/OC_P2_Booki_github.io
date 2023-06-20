@@ -5,7 +5,7 @@
 
 body {
     margin: auto;
-    min-width: 1051px;
+    min-width: 1101px;
     max-width: 1400px;
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
@@ -810,7 +810,11 @@ h1, h2 {
 .Bouton-icone {
     display: flex;
     justify-content: center;
-}   
+}  
+
+.Bouton-icone:hover {
+    color:black
+}
 
 .Bouton-icone>i {
     font-size: 16px;
@@ -935,11 +939,13 @@ header {
     display: flex;
     margin: auto;
     justify-content: center;
-    padding: 15px 15px 15px 50px;}
+    padding: 15px 15px 15px 50px;
+}
 
 .logo img {
         max-width: 45%;
-        margin: auto;}
+        margin: auto;
+}
 
 nav>ul {
     gap:0;
@@ -948,7 +954,7 @@ nav>ul {
 nav>ul>li {
 	font-size: 16px;
     width: 50%;
-    }
+}
 
 nav>ul>li:nth-child(1) a {
     width: 50%;
@@ -977,6 +983,7 @@ nav a:hover {
 .titre>h1 {
     padding-right: 30px;
 }
+
 .sous-titre {
     font-size: 16px;
 }
@@ -1017,6 +1024,10 @@ nav a:hover {
     justify-content: center;
     font-size: 19px;
 }   
+
+.Bouton-icone:hover {
+    color:black;
+}
 
 .filtres {
     flex-direction: column;
